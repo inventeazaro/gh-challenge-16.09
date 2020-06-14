@@ -21,6 +21,8 @@ Running it is as simple as:
 npm run start
 ```
 
+NOTE: You might want to output the transcript into a file, in order to do that, just use the ">" operator that is supported on most shells.
+
 You might also want to [configure](#configuration) it!
 
 ## Configuration
