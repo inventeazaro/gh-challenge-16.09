@@ -4,7 +4,7 @@ This is a Google Cloud Speech-To-Text application with an extensible configurati
 
 ## Usage
 
-Firstly, all NPM packages must be installed. So, make sure that Node and NPM are installed.
+Firstly, all NPM packages must be installed. So, make sure that Node and NPM are installed in order to install the packages.
 Once those are installed, run the following command in the directory of the project:
 ```
 npm install
@@ -14,7 +14,7 @@ npm install
 Once that is finished, you are going to need to get your Google Cloud API keys. [Google
 has a good article covering it!](https://cloud.google.com/docs/authentication/getting-started)
 
-After you've set the `GOOGLE_APPLICATION_CREDENTIALS` to the JSON
+After you've set the `GOOGLE_APPLICATION_CREDENTIALS` to the path of the JSON
 provided by Google as described in the article, you are ready to start the application!
 Running it is as simple as:
 ```
@@ -41,13 +41,13 @@ Sadly, I was only able to implement timestamps and confidence marking, since in 
 I also cut the test case audio so that it would fit in the quota.
 
 [!!!!] IMPORTANT:
-Words or sections of the transcripts that it's not very sure about, will have "???" printed before them. (Well, if you didn't edit the config, that is)
+Words or sections of the transcripts that it's not very sure about, will have "???" printed before them. (Well, by default, that is)
 
 [!!!!] MORE IMPORTANT STUFF:
-By default, it beta is set to true, you might not want that
+By default, beta is set to true. You might not want that.
 
 ## Links
 
-If you have any questions, [join the Discord server I made just for this](https://discord.gg/a92aeTw).
+If you have any questions, [join the Discord server I made](https://discord.gg/a92aeTw).
 
-What is GoHard? [This.](https://gohard.inventeaza.ro/)
+What is GoHard? [Something really cool.](https://gohard.inventeaza.ro/)
