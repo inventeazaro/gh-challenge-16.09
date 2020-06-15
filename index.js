@@ -1,5 +1,8 @@
+const { app } = require('./config');
+
 async function main() {
     const { zeroZeroFormat, config } = require('./util');
+    const fs = require('fs');
 
     let speech;
     if (config.app.useBeta) {
@@ -83,12 +86,21 @@ async function main() {
         }
     });
 
+    let fileOutput = '';
+
     console.log(`[MAIN] Results: \n\n\n`);
     console.log(result);
+    fileOutput += `${result}\n\n`;
 
     if (config.app.showAllWords) {
         console.log(`[MAIN] Words: \n\n\n`);
         console.log(wordsData);
+        fileOutput += `${wordsData}\n`;
+    }
+
+    if (config.app.outputFile) {
+        fs.writeFileSync(config.app.outputFile, fileOutput);
+        console.log('[MAIN] [EXIT] Wrote to file');
     }
 }
 main().catch(console.error);

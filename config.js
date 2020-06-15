@@ -34,7 +34,8 @@ const config = {
             speakers: 2 // Number of speakers to be identified. Only does something if enable === true.
         },
         timestamps: true, // Determines if timestamps are shown. If timestamps for each word are needed, enable showAllWords, otherwise timestamps will be printed once in a while. [CHANGES REQUEST]
-        showImportantConfigOnStartup: true // If === true, it shows some of the config on startup.
+        showImportantConfigOnStartup: true, // If === true, it shows some of the config on startup.
+        outputFile: 'output.txt', // The file it is going to output to. 
     }
 }
 
